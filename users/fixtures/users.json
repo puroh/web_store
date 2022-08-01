@@ -1,0 +1,38 @@
+[
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$ztmKzI0dib4ZD1QY84TfzJ$7OftsDuycfQiYIFA67yspvrRKt32mKMo0hmF4kAHIm4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "pacheco",
+        "first_name": "nicolas",
+        "last_name": "pacheco",
+        "email": "pacheco@dsd.dev",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-06T22:43:23Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$amrcDZpU6wEvk1SIWySGVV$HO9Lm/nYblVafJ86FZVVuFyw1ppM4+LlZLk6gJG6Yeg=",
+        "last_login": "2022-07-06T22:49:25.888Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@dsd.dev",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-07-06T22:44:15.128Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
