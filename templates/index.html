@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<div class="col">
+    <h4 class="text-center"> {{message}}</h4>
+    {% include "snippets/search.html" %}
+
+    {% include "snippets/list.html" %}
+
+
+</div>
+
+
+{% endblock %}
