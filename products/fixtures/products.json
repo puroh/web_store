@@ -1,0 +1,28 @@
+[
+{
+    "model": "products.product",
+    "pk": "086559c3-5c7a-4772-b34d-b1bcc20aae83",
+    "fields": {
+        "title": "Playera dama",
+        "description": "playera para dama",
+        "price": "21.00",
+        "created_at": "2022-07-05T06:33:51.422Z",
+        "modified_at": "2022-07-05T06:33:51.422Z",
+        "slug": "playera-dama",
+        "image": "products/550x482_08C.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "cf9e396a-d388-4181-b1f0-8cfa23dc86e5",
+    "fields": {
+        "title": "Playera",
+        "description": "playera print",
+        "price": "20.00",
+        "created_at": "2022-07-04T04:40:44.227Z",
+        "modified_at": "2022-07-04T04:40:44.227Z",
+        "slug": "playera",
+        "image": "products/captura_1_R38bPoc.png"
+    }
+}
+]
