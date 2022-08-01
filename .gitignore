@@ -102,5 +102,6 @@ ENV/
 # Rope project settings
 .ropeproject
 
-# Local deployment
-tinglebear/settings/local.py
+# Local media
+media/*
+codigo_github/*
