@@ -16,7 +16,8 @@
             </tr>
         </thead>
         <tbody>
-            {% for product in cart.products.all %}
+            {% for cp in cart.cartproducts_set.all %}
+            {% with product=cp.product %}
             <tr>
                 <th>
                     {{ forloop.counter }}
@@ -32,7 +33,7 @@
                 </th>
 
                 <th>
-                    1
+                    {{ cp.quantity }}
                 </th>
 
                 <th>
@@ -40,6 +41,7 @@
                 </th>
 
             </tr>
+            {% endwith%}
             {% endfor %}
         </tbody>
     </table>
