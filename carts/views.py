@@ -18,13 +18,21 @@ def add(request):
 
     # cart.products.add(product, through_defaults={"quantity": quantity})
 
-    cart_products = CartProducts.objects.create_or_update_quantity(
+    cart_product = CartProducts.objects.create_or_update_quantity(
         cart=cart,
         product=product,
         quantity=quantity,
     )
 
-    return render(request, "carts/add.html", {"product": product})
+    return render(
+        request,
+        "carts/add.html",
+        {
+            "quantity": quantity,
+            "cart_product": cart_product,
+            "product": product,
+        },
+    )
 
 
 def remove(request):
