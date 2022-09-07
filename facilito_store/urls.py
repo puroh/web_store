@@ -27,6 +27,7 @@ urlpatterns = [
     path("user/register", register_view, name="register"),
     path("products/", include("products.urls")),
     path("cart/", include("carts.urls")),
+    path("orders/", include("orders.urls")),
 ]
 
 if settings.DEBUG:
