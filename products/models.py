@@ -3,8 +3,6 @@ from django.utils.text import slugify
 from django.db import models
 from uuid import uuid4
 
-# Create your models here.
-
 
 class Product(models.Model):
     uuid = models.UUIDField(primary_key=True, default=uuid4, editable=False)
@@ -19,6 +17,6 @@ class Product(models.Model):
     def __str__(self):
         return f"{self.title}"
 
-    def save(self, *args, **kwargs) -> None:  # esto se comenta cuando funcione el signal
-        self.slug = slugify(self.title)
-        return super(Product, self).save(*args, **kwargs)
+    # def save(self, *args, **kwargs) -> None:  # esto se comenta cuando funcione el signal
+    #     self.slug = slugify(self.title)
+    #     return super(Product, self).save(*args, **kwargs)
