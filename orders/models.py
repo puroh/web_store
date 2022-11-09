@@ -28,3 +28,10 @@ class Order(models.Model):
 
     def __str__(self) -> str:
         return f"{self.order_id}"
+
+    def update_total(self):
+        self.total = self.get_total()
+        self.save()
+
+    def get_total(self):
+        return self.cart.total + self.shipping_total
