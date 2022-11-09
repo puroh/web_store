@@ -1,4 +1,5 @@
 from enum import Enum
+
 from django.db import models
 
 from carts.models import Cart
@@ -16,6 +17,7 @@ choices = [(tag, tag.value) for tag in OrderStatus]
 
 
 class Order(models.Model):
+    order_id = models.CharField(max_length=100, null=False, blank=False, unique=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
     status = models.CharField(max_length=50, choices=choices, default=OrderStatus.CREATED)
@@ -25,4 +27,4 @@ class Order(models.Model):
     modified_at = models.DateTimeField(auto_now=True)
 
     def __str__(self) -> str:
-        return f"{self.status}"
+        return f"{self.order_id}"

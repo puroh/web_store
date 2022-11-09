@@ -13,5 +13,5 @@ def quantity_product_format(quantity=1):
 def quantity_add_format(quantity=1):
     return "{} {}".format(
         quantity_product_format(quantity),
-        "added" if quantity > 1 else "added",  # in english no 's to verb
+        "added" if quantity > 1 else "added",  # in english no 's in verb
     )
